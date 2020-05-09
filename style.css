@@ -9,50 +9,99 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* header section, with nagivation */
+
+
+/* -------------------------Styling for the navigation of the webiste------------------------*/
+
+
+/* header section, outer flex box container with items: .page-title, .navigation-container */
 .header {
+
+    /* creates margin below header and above other page content */
     margin-bottom: 5em;
+
+    /* all text in the header is bold */
     font-weight: bold;
-    border-bottom: black;
-    border-bottom-width: medium;
-    border-bottom-style: solid;
+
+    /* sets border below */
+    border-bottom: medium solid black;
+
+    /* sets flexbox for its children elements */
+    display: flex;
+
+    /* aligns items to the center of this flex-box */
+    align-items: center;
+
+    /* for larger screens, displays as row */
+    flex-flow: row nowrap;
+
+    /* places "Conquering Challenges" aligned left, other links aligned right */
+    justify-content: space-between;
+
 }
 
-/* container for all navigation links */
+
+/* right margin disappears if screen gets too small */
+@media only screen and (max-width: 1000px) {
+    
+    .header {
+        flex-flow: column nowrap;
+    }
+}
+
+
+/* inner flex box container for all navigation links (background, services, testimonials, contact) */
 .navigation-container {
+
+    /* allows the container to take up 50% of header, spreading out links */
+    flex-basis: 50%;
+
+    /* sets display to flex */
     display: flex;
+
+    /* removes bullet points from list items */
     list-style: none;
+
+    /* aligns items to the center */
     align-items: center;
     
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* spaces all navigation links evenly */
+    justify-content: space-evenly;
+
+    /* sets flexbox to a row setup, with no wrapping */
+    flex-flow: row nowrap;
+
+    /* removes padding from navigation links */
     padding: 0 0 0 0;
+
 }
 
-/* "conquering challenges" page title */
-.page-title {
-    margin-right: 5em;
+/* right margin disappears if screen gets too small */
+@media only screen and (max-width: 500px) {
+    
+    .navigation-container {
+        flex-flow: column nowrap;
+    }
 }
 
-/* individual navigation links; removes highlighting, makes it black */
+
+/* individual navigation links; removes highlighting, makes the text black */
 .menu {
     color: black;
     text-decoration: none;
+
+}
+
+/* increases the size of the title, and aligns it to the center */
+.title {
+    font-size: larger;
+    text-align: center;
 }
 
 
-.body {
-    display: flex;
-}
+/* -------------------------Styling for the body of the webiste------------------------*/
 
-.text {
-    flex-basis: 70%;
-    margin-right: 2em;
-}
-
-.image {
-    flex-basis: 30%;
-}
+/* Image styling */
 
 #rebecca {
     max-width: 100%;
