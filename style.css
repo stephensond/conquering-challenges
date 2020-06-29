@@ -3,12 +3,11 @@
 
 /* applies to entire website */
 body {
-    background-color: rgb(235, 215, 190);
-    padding-left: 10%;
-    padding-right: 10%;
-    font-family: 'Inter', sans-serif;
+  background-color: rgb(235, 215, 190);
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Inter', sans-serif;
 }
-
 
 
 /* -------------------------Styling for the navigation of the webiste------------------------*/
@@ -17,85 +16,85 @@ body {
 /* header section, outer flex box container with items: .page-title, .navigation-container */
 .header {
 
-    /* creates margin below header and above other page content */
-    margin-bottom: 5em;
+  /* creates margin below header and above other page content */
+  margin-bottom: 5em;
 
-    /* all text in the header is bold */
-    font-weight: bold;
+  /* all text in the header is bold */
+  font-weight: bold;
 
-    /* sets border below */
-    border-bottom: medium solid black;
+  /* sets border below */
+  border-bottom: medium solid black;
 
-    /* sets flexbox for its children elements */
-    display: flex;
+  /* sets flexbox for its children elements */
+  display: flex;
 
-    /* aligns items to the center of this flex-box */
-    align-items: center;
+  /* aligns items to the center of this flex-box */
+  align-items: center;
 
-    /* for larger screens, displays as row */
-    flex-flow: row nowrap;
+  /* for larger screens, displays as row */
+  flex-flow: row nowrap;
 
-    /* places "Conquering Challenges" aligned left, other links aligned right */
-    justify-content: space-between;
+  /* places "Conquering Challenges" aligned left, other links aligned right */
+  justify-content: space-between;
 
 }
 
 
 /* right margin disappears if screen gets too small */
 @media only screen and (max-width: 1000px) {
-    
-    .header {
-        flex-flow: column nowrap;
-    }
+
+  .header {
+    flex-flow: column nowrap;
+  }
 }
 
 
 /* inner flex box container for all navigation links (background, services, testimonials, contact) */
 .navigation-container {
 
-    /* allows the container to take up 50% of header, spreading out links */
-    flex-basis: 50%;
+  /* allows the container to take up 50% of header, spreading out links */
+  flex-basis: 50%;
 
-    /* sets display to flex */
-    display: flex;
+  /* sets display to flex */
+  display: flex;
 
-    /* removes bullet points from list items */
-    list-style: none;
+  /* removes bullet points from list items */
+  list-style: none;
 
-    /* aligns items to the center */
-    align-items: center;
-    
-    /* spaces all navigation links evenly */
-    justify-content: space-evenly;
+  /* aligns items to the center */
+  align-items: center;
 
-    /* sets flexbox to a row setup, with no wrapping */
-    flex-flow: row nowrap;
+  /* spaces all navigation links evenly */
+  justify-content: space-evenly;
 
-    /* removes padding from navigation links */
-    padding: 0 0 0 0;
+  /* sets flexbox to a row setup, with no wrapping */
+  flex-flow: row nowrap;
+
+  /* removes padding from navigation links */
+  padding: 0 0 0 0;
 
 }
 
 /* right margin disappears if screen gets too small */
 @media only screen and (max-width: 500px) {
-    
-    .navigation-container {
-        flex-flow: column nowrap;
-    }
+
+  .navigation-container {
+    flex-flow: column nowrap;
+  }
 }
 
 
 /* individual navigation links; removes highlighting, makes the text black */
 .menu {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 
 }
 
 /* increases the size of the title, and aligns it to the center */
 .title {
-    font-size: larger;
-    text-align: center;
+  font-size: larger;
+  text-align: center;
 }
 
 
@@ -104,6 +103,6 @@ body {
 /* Image styling */
 
 #rebecca {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
